@@ -1,10 +1,32 @@
-# us_airline_delay_prediction_
+#Prediction of Flight Delays
 
-something
+## Based on 2017 United States Department of Transportation Data
+
+##### By: Traci Lim, Yi Luo, Bill Skinner
+
+---
+
+The aim of this project was to use historical data to **develop a model for a flight delay prediction system**, where the aim of the system is to provide flight delay information at the time of booking to help people avoid delayed flights.  The model was developed and then deployed within a system that takes in basic flight details and displays predicted delay information to the user to help compare the likelihood of flight delays for different airlines. 
+
+On top of exploratory data analysis and feature engineering, this project also extensively compared the performance of tree-based models: 
+
+- CART
+- C5.0
+- Gradient Boosting Machine (Stochastic Gradient Boosting)
+- Extreme Gradient Boosting (XGBoost)
+- Stacking
+
+This repository contains a snippets of the a 20-page report on the prediction of delays of United States domestic flights. If you are interested in looking at the full report, feel free to [email](longwind48@gmail.com) me.
+
+---
 
 ### Methodology
 
+![methodology](methodology.png)
 
+---
+
+### Summary and Interpretation of Results
 
 ![flow_chart](summarytable.png)
 
@@ -36,3 +58,8 @@ Users may also find it useful to know which airlines typically fly the route the
 
 ---
 
+### Conclusion
+
+To corroborate the classifier generated in this data mining project, we pitted our best model’s results against a flight delay prediction competition hosted by CrowdAnalytix.com in 2016 (CrowdANALYTIX, 2016). Our best model, XGBoost, when trained on 70,000 flights, achieved an AUC score of 68.1%. Interestingly enough, **this result is competitive with the top submissions in the competition, and would have achieved a rank of 19th out of 664 submissions**, where the winning solution achieved an AUC score of 70.9%. Although the data we used and the data the competition provided came from the same source and included similar features, (BUREAU OF TRANSPORTATION  STATISTICS, 2018), the data used in the competition was from the year 2014 to 2015. Therefore, this comparison can only be taken with a pinch of salt. Nevertheless, it shows that the results of our work are competitive and further improvements could still be made by engineering better features and trying different ensembles or methods.
+
+Although optimising models is an imperative aspect of a data mining task, we also developed a functional implementation of our predictive model.  This guided our choice of features to only those that could be inputted by a user or computed at the time of booking a flight, which could be months in advance.  Using only these limited features, we were able to develop a data mining model trained on 2017 data that is capable of correctly classifying 62.2% of flights.  This model was then integrated into a flight delay system in R that produces plots of predicted delays for the relevant airlines for a flight of interest.  The output plot, which can be generated at the time of booking a flight, enables the user to easily compare which airlines are likely to have flight delays.  Further possibilities exist to enhance the model’s predictive ability, adjust the format of the output, and to deploy the model into more refined flight search tools. 
