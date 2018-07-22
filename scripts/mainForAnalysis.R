@@ -66,10 +66,10 @@ preprocessed.data <- appendAirportData(preprocessed.data, "AIRPORT", factor = TR
 
 # Analyze data ===========================================================================
 dataForAnalysisOfCausesOfDelay <- splitIntoTrainAndTest(clean.data)[["train"]]
-analyzeCausesOfDelay(dataForAnalysisOfCausesOfDelay)
+# analyzeCausesOfDelay(dataForAnalysisOfCausesOfDelay)
 
-dataForAnalysis <- traindf
-univariateAnalysis(dataForAnalysis)
-multivariateAnalysis(dataForAnalysis, cat=TRUE)
-multivariateAnalysis(dataForAnalysis, cat=FALSE)
+# dataForAnalysis <- traindf
+# univariateAnalysis(dataForAnalysis)
+# multivariateAnalysis(dataForAnalysis, cat=TRUE)
+# multivariateAnalysis(dataForAnalysis, cat=FALSE)
 
