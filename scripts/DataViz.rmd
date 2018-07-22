@@ -4,6 +4,10 @@ author: "Traci"
 date: "22 July 2018"
 output: html_document
 ---
+```{r}
+source("scripts/mainForAnalysis.R")
+```
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
