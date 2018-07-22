@@ -2,16 +2,17 @@
 title: "Data Visualization"
 author: "Traci"
 date: "22 July 2018"
-output: html_document
+output: rmarkdown::github_document
 ---
-```{r}
+```{r setup, include=FALSE}
+setwd("C:/Users/longwind48/Google Drive/Programming/Projects/us_airline_delay_prediction")
 source("scripts/mainForAnalysis.R")
+
 ```
 
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-
+```{r setup, echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
 head(dataForAnalysisOfCausesOfDelay)
 ```
 
