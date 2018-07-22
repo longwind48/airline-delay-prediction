@@ -9,6 +9,8 @@ This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute
 
 Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
 
+This markdown file is a summary of a final project 
+
 ```{r include=FALSE}
 setwd("C:/Users/longwind48/Google Drive/Programming/Projects/us_airline_delay_prediction")
 source("scripts/mainForAnalysis.R")
@@ -17,6 +19,11 @@ source("scripts/mainForAnalysis.R")
 ```{r echo=TRUE}
 head(dataForAnalysisOfCausesOfDelay)
 ```
+
+```{r echo=FALSE}
+analyzeCausesOfDelay(dataForAnalysisOfCausesOfDelay)
+```
+
 
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.

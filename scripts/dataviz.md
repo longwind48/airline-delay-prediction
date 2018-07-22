@@ -9,6 +9,8 @@ This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute
 
 Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
 
+This markdown file is a summary of a final project 
+
 
 
 
@@ -109,6 +111,9 @@ head(dataForAnalysisOfCausesOfDelay)
 ## 6    Los Angeles, CA (Metropolitan Area)            DEN          BUR
 ## 10 New York City, NY (Metropolitan Area)            PBI          JFK
 ```
+
+![](dataviz_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+
 
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
