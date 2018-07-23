@@ -43,7 +43,7 @@ The following data shown has been preprocessed with the script: ```source("scrip
 
 
 
-Take a look at the preprocessed data. We see four different types of data: numeric, categorical, binary, and date. Accessing the types of data available is crucial in making data visualization decision. Just with the inclusion of a date feature immediately imply we may be dealing with time series plots, i.e. plots that show how a variable change along with time. 
+Take a look at the preprocessed data. We see four different types of data: numeric, categorical, binary, and date. Accessing the types of data available is crucial in making data visualization decision. For example, the inclusion of a date feature immediately tells us we may be dealing with time series plots, i.e. plots that show how a variable change along with time. 
 
 
 ```
