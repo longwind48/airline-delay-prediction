@@ -130,7 +130,7 @@ Let us investigate further by looking at the carriers and their average length o
 
 In terms of carrier, Virgin America (VX), JetBlue Airlines (B6) and ExpressJet Airlines Inc (EV) . have the longest average length of delay, as well as highest proportion of delayed flights. In contrast, United Air Lines Inc. (UA), Delta Air Lines Inc. (DL), Alaska Airlines Inc. (AS) and Hawaiian Airlines Inc. (HA) perform best with the shortest length of delay and smallest proportion of delayed flights. Well, it is hard to determine what is the actual cause in this case. We can only speculate at best. Take a look at the chart below. It depicts the domestic market share of leading U.S. airlines. 
 
-The table below is taken from [The Statistics Portal: Domestic market share of leading U.S. airlines from April 2017 to March 2018](https://www.statista.com/statistics/250577/domestic-market-share-of-leading-us-airlines/)
+The bar chart below is taken from [The Statistics Portal: Domestic market share of leading U.S. airlines from April 2017 to March 2018](https://www.statista.com/statistics/250577/domestic-market-share-of-leading-us-airlines/)
 
 ![](dataviz_files/figure-html/USDomesticFlightsMarketShare.png)
 
