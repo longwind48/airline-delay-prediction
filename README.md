@@ -1,3 +1,10 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    keep_md: yes
+  pdf_document: default
+---
 # Prediction of Flight Delays
 
 ## Based on 2017 United States Department of Transportation Data
@@ -12,7 +19,7 @@
 
 This markdown document shows a summary of the 20-page report for the final year project of MA429 Algorithmic Techniques for Data Mining. 
 
-![](scripts\dataviz_files\figure-html\carriers.png)
+![](\dataviz_files\figure-html\carriers.png)
 
 Flight delays are a frequently occurring reality of commercial air travel. In 2017, 23% of all domestic flights in the United States, over a million flights, were delayed. Flights are considered on-time if they arrive less than 15 minutes after their scheduled arrival time, according to the United States Bureau of Transportation Statistics. 
 
@@ -114,7 +121,7 @@ In the data, reasons for delay is recorded in numeric format, i.e. if the featur
 
 
 
-![](C:\Users\longwind48\Google Drive\Programming\Projects\us_airline_delay_prediction\scripts\dataviz_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](dataviz_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 The largest three reasons that delays are attributed to are the National Aviation System, late aircraft and carriers. This makes a lot of sense because delayed airlines most likely cause a domino effect, making subsequent flights even more delayed. Likewise, in the category of carrier, delays are very susceptible to human errors because workers are responsible of maintenance, baggage handling and fueling.
 
 Also, it was observed that most delayed flights were attributed to more than one reason.
@@ -123,13 +130,13 @@ Also, it was observed that most delayed flights were attributed to more than one
 
 Let us investigate further by looking at the carriers and their average length of delay:
 
-![](C:\Users\longwind48\Google Drive\Programming\Projects\us_airline_delay_prediction\scripts\dataviz_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](dataviz_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
 In terms of carrier, Virgin America (VX), JetBlue Airlines (B6) and ExpressJet Airlines Inc (EV) . have the longest average length of delay, as well as highest proportion of delayed flights. In contrast, United Air Lines Inc. (UA), Delta Air Lines Inc. (DL), Alaska Airlines Inc. (AS) and Hawaiian Airlines Inc. (HA) perform best with the shortest length of delay and smallest proportion of delayed flights. Well, it is hard to determine what is the actual cause in this case. We can only speculate at best. Take a look at the chart below. It depicts the domestic market share of leading U.S. airlines. 
 
 The table below is taken from [The Statistics Portal: Domestic market share of leading U.S. airlines from April 2017 to March 2018](https://www.statista.com/statistics/250577/domestic-market-share-of-leading-us-airlines/)
 
-![](C:\Users\longwind48\Google Drive\Programming\Projects\us_airline_delay_prediction\scripts\dataviz_files/figure-html/USDomesticFlightsMarketShare.png)
+![](dataviz_files/figure-html/USDomesticFlightsMarketShare.png)
 
 As speculated, market share does hold some degree of influence towards the average length of delay. Delta Airlines, United Airlines and American Airlines are major contenders in terms of market shares, and all of them have distinguishably lower average delay than other airlines. In addition, Alaska Airlines seems to be the anomaly here. They achieved a relatively low rate of delay compared to its neighbour in terms of market shares---Jetblue Airlines.
 
@@ -137,7 +144,7 @@ As speculated, market share does hold some degree of influence towards the avera
 
 Evaluating only the average length of delay would not be enough to conclude which carrier did worse in terms of delays. This time, We assess the proportion of flights delayed per carrier:
 
-![](C:\Users\longwind48\Google Drive\Programming\Projects\us_airline_delay_prediction\scripts\dataviz_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![](dataviz_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
 The United States Bureau of Transportation Statistics define "delayed flight" to be a carrier that is delayed for more than 15 minutes. It is clear that this chart's pattern closely mirrors the previous chart. Quite frankly, from this point on, We can be more certain about which are the worst carriers in terms of getting delayed. 
 
@@ -145,7 +152,7 @@ The United States Bureau of Transportation Statistics define "delayed flight" to
 
 What about the month people choose to fly? Does flying in say, Christmas period, have higher chances of getting delayed? 
 
-![](C:\Users\longwind48\Google Drive\Programming\Projects\us_airline_delay_prediction\scripts\dataviz_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![](dataviz_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
 
 This simple line graph definitely shows some interesting inferences. Proportion of flights delayed peaked in the month of June, July and August, which happens to be the months of summer. Why is this the case? Well, it's really not hard to find out. Googling... 
 
@@ -170,8 +177,8 @@ delayed flights are highest on Mondays and Fridays, while lowest on Saturdays. A
 
 Let's do the same analysis for arrival and departure hours:
 
-![](C:\Users\longwind48\Google Drive\Programming\Projects\us_airline_delay_prediction\scripts\dataviz_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
-![](C:\Users\longwind48\Google Drive\Programming\Projects\us_airline_delay_prediction\scripts\dataviz_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](dataviz_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![](dataviz_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
 Both plots have pretty clear trends. Within a day, average length of delay and proportion of delayed flights both fluctuate wildly in the early morning, and then climb up steadily to the delay peak around 20:00 and 21:00. The peaks in the morning can be misleading, considering that the effect of a single delayed flight will be quite visible on the delayed proportion, given the small number of domestic flights that take off in the early morning. The increasing trend of delay could be explained by the
 accumulated influence of delays earlier in the day.
@@ -207,7 +214,7 @@ into bins, models can effectively capture the non-linear patterns in the data.
 
 ### Methodology
 
-![methodology](C:\Users\longwind48\Google Drive\Programming\Projects\us_airline_delay_prediction\scripts\dataviz_files/figure-html/methodology.png)
+![methodology](dataviz_files/figure-html/methodology.png)
 
 ---
 
@@ -215,7 +222,7 @@ into bins, models can effectively capture the non-linear patterns in the data.
 
 ### Summary and Interpretation of Results
 
-![flow_chart](C:\Users\longwind48\Google Drive\Programming\Projects\us_airline_delay_prediction\scripts\dataviz_files/figure-html/summarytable.png)
+![flow_chart](dataviz_files/figure-html/summarytable.png)
 
 
 
@@ -239,11 +246,11 @@ To implement our model, we developed a Flight Delay Prediction System in R that 
 
 Users may also find it useful to know which airlines typically fly the route they are interested in.  Another plot, beside the delay predictions, shows the total number of flights that each airline flew from the origin airport to the destination airport in 2017; only airlines that flew the route are shown.  Of course, airline schedules may change, but this gives the user a pretty good idea of which airlines have been the main carriers on a route.  For example, of the five airlines that flew from Atlanta Georgia to Los Angeles California in 2017, Delta flew by far the most flights.  This makes sense because Atlanta (ATL) and Los Angeles (LAX) are both Delta hubs.
 
-![applicationofmodel1](C:\Users\longwind48\Google Drive\Programming\Projects\us_airline_delay_prediction\scripts\dataviz_files/figure-html/applicationofmodel1.png)
+![applicationofmodel1](dataviz_files/figure-html/applicationofmodel1.png)
 
 *Figure 10: Overview of Inputs and Outputs of Flight Delay Prediction System *
 
-![applicationofmodel2](C:\Users\longwind48\Google Drive\Programming\Projects\us_airline_delay_prediction\scripts\dataviz_files/figure-html/applicationofmodel2.png)
+![applicationofmodel2](dataviz_files/figure-html/applicationofmodel2.png)
 
 *Figure 11: Output of Flight Delay Prediction System for Flight from Atlanta to Los Angeles departing at 12:50 and arriving at 14:51 on Saturday April 28*
 
