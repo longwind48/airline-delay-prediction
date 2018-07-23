@@ -13,5 +13,5 @@ output:
 
 ---
 
-Due to markdown issues, the markdown file has been relocated to [link](scripts\dataviz.md). 
+Due to markdown issues, the markdown file has been relocated to [link](scripts/dataviz.md). 
 
