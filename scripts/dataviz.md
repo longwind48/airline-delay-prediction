@@ -211,6 +211,8 @@ into bins, models can effectively capture the non-linear patterns in the data.
 
 ### Methodology
 
+
+
 ![methodology](dataviz_files/figure-html/methodology.png)
 
 ---
