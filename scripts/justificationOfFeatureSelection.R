@@ -1,17 +1,17 @@
-  #1. Average length of delay per feature
-  data=dataForAnalysisOfCausesOfDelay
-  #1.1 Carrier
-  data$AVE_DELAY_CARRIER=ave(data$ARR_DELAY,data$CARRIER)
-  png(filename = "plots/1.1Average_length_of_delay_per_carrier.png")
-  ggplot(data,aes(x=reorder(data$CARRIER,-data$AVE_DELAY_CARRIER),
-                  y=data$AVE_DELAY_CARRIER,
-                  group = 1))+
-    geom_line()+
-    geom_point()+
-    ggtitle("Average Length of Delay per Carrier") +
-    xlab("Carrier") + ylab("Average Length of Delay(min)")+
-    theme(plot.title = element_text(hjust = 0.5))
-  dev.off()
+#1. Average length of delay per feature
+data=dataForAnalysisOfCausesOfDelay
+#1.1 Carrier
+data$AVE_DELAY_CARRIER=ave(data$ARR_DELAY,data$CARRIER)
+png(filename = "plots/1.1Average_length_of_delay_per_carrier1.png")
+g <- ggplot(data,aes(x=reorder(data$CARRIER,-data$AVE_DELAY_CARRIER),
+              y=data$AVE_DELAY_CARRIER,
+              group = 1))+
+geom_line()+
+geom_point()+
+ggtitle("Average Length of Delay per Carrier") +
+xlab("Carrier") + ylab("Average Length of Delay(min)")+
+theme(plot.title = element_text(hjust = 0.5))
+dev.off()
   
   delayedFlights <- subset(data,data$CARRIER_DELAY > 15)
   bymedian <- with(delayedFlights, 
