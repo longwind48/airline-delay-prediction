@@ -5,9 +5,13 @@ output:
     keep_md: yes
   pdf_document: default
 ---
+# Prediction of US Domestic Flight Delays
+
+By: Traci Lim, William Skinner, Luo Yi
+
 ## Introduction
 
-This markdown document shows a summary of the 20-page report for the final year project of MA429 Algorithmic Techniques for Data Mining. 
+This markdown document shows a summary of the 20-page report for the final year project of MA429 Algorithmic Techniques for Data Mining.
 
 ![](dataviz_files/figure-html/carriers.png)
 
