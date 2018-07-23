@@ -26,12 +26,12 @@ and other factors make older data less relevant for predicting delays for flight
 at the most recent month would not be able to utilize any information that is unique between
 months. Considering these factors, it was chosen to use data from all 12 months in 2017.
 
+The 2017 data on domestic flights in the United States contains 5,674,621 observations on flights between 320 airports operated by 12 carriers. It comes at about 680MB in size in CSV format. Fortunately, we were able to compressed it into a convenient 47MB RData file, courtesy to R's built-in functions. 
+
 ---
 
 ## Investigation
 Let's dive into the most intriguing part of the machine learning process---**Data visualization**. 
-
-The 2017 data on domestic flights in the United States contains 5,674,621 observations on flights between 320 airports operated by 12 carriers. It comes at about 680MB in size in CSV format. Fortunately, we were able to compressed it into a convenient 47MB RData file, courtesy to R's built-in functions. 
 
 The following data shown has been preprocessed with the script: ```source("scripts/mainForAnalysis.R")```. More details can be found in it. We skip it to bring you the juicy bits right away.
 
@@ -133,6 +133,8 @@ The table below is taken from [The Statistics Portal: Domestic market share of l
 As speculated, market share does hold some degree of influence towards the average length of delay. Delta Airlines, United Airlines and American Airlines are major contenders in terms of market shares, and all of them have distinguishably lower average delay than other airlines. In addition, Alaska Airlines seems to be the anomaly here. They achieved a relatively low rate of delay compared to its neighbour in terms of market shares---Jetblue Airlines.
 
 ---
+
+
 
 Evaluating only the average length of delay would not be enough to conclude which carrier did worse in terms of delays. This time, We assess the proportion of flights delayed per carrier:
 
