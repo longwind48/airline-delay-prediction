@@ -98,9 +98,9 @@ Take a look at the preprocessed data. We see four different types of data: numer
 ```
 
 
-Out of approximately 5.7 million observations on flights between 320 airports, 1,029,474 of these flights were delayed by 15 minutes or more. If we were to give a naive probability estimate to the chance of delay, it would be astonishingly close to 20%! 
+Out of approximately 5.7 million observations on flights between 320 airports, 1,029,474 of these flights were delayed by 15 minutes or more. If we were to give a naive probability estimate to the chance of delay, it would be close to 20%! 
 
-In the data, reasons for delay is recorded in numeric format, i.e. if the feature ```CARRIER_DELAY``` is ```15```, it means the flight delay was caused by "carrier"-related reasons for a total of 15 minutes. The following table shows each reason of delay in its shortform and description. 
+In the data, reasons for delay is recorded in numeric format, i.e. if the feature ```CARRIER_DELAY``` is ```15```, it means the flight delay was caused by "carrier"-related reasons for a total of 15 minutes. The following table shows each reason of delay in its short-form and description. 
 
 | Reasons for Delay        | Description                                                  |
 | ------------------------ | ------------------------------------------------------------ |
