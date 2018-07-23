@@ -9,6 +9,8 @@ output:
 
 This markdown document shows a summary of the 20-page report for the final year project of MA429 Algorithmic Techniques for Data Mining. 
 
+![](dataviz_files/figure-html/carriers.png)
+
 Flight delays are a frequently occurring reality of commercial air travel. In 2017, 23% of all domestic flights in the United States, over a million flights, were delayed. Flights are considered on-time if they arrive less than 15 minutes after their scheduled arrival time, according to the United States Bureau of Transportation Statistics. 
 
 Delayed flights can cause hassle for passengers who may have to wait longer than planned, miss connecting flights, or arrive late for critical meetings. While many people would prefer to avoid delays, many popular flight booking websites such as kayak.com, skyscanner.net, and hipmunk.com, do not display predicted delay information to aid them in doing so. Google Flights only recently added a feature to predict flight delays as reported by Tech Crunch in January 2018. Knowing the likelihood of any particular flight being delayed would help people make informed decisions on which flights to book.

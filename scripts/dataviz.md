@@ -5,29 +5,17 @@ output:
     keep_md: yes
   pdf_document: default
 ---
-# Prediction of Flight Delays
-
-## Based on 2017 United States Department of Transportation Data
-
-##### By: Traci Lim, Yi Luo, Bill Skinner
-
----
-
-
-
 ## Introduction
 
 This markdown document shows a summary of the 20-page report for the final year project of MA429 Algorithmic Techniques for Data Mining. 
 
-![](dataviz_files\figure-html\carriers.png)
+![](dataviz_files/figure-html/carriers.png)
 
 Flight delays are a frequently occurring reality of commercial air travel. In 2017, 23% of all domestic flights in the United States, over a million flights, were delayed. Flights are considered on-time if they arrive less than 15 minutes after their scheduled arrival time, according to the United States Bureau of Transportation Statistics. 
 
 Delayed flights can cause hassle for passengers who may have to wait longer than planned, miss connecting flights, or arrive late for critical meetings. While many people would prefer to avoid delays, many popular flight booking websites such as kayak.com, skyscanner.net, and hipmunk.com, do not display predicted delay information to aid them in doing so. Google Flights only recently added a feature to predict flight delays as reported by Tech Crunch in January 2018. Knowing the likelihood of any particular flight being delayed would help people make informed decisions on which flights to book.
 
 **The aim of this project was to use historical data to develop a model for a flight delay prediction system**, where the goal of the system is to provide flight delay information at the time of booking to help people avoid delayed flights. The model developed will be deployed within a system that takes in basic flight details and displays predicted delay information to the user to help compare the likelihood of flight delays for different airlines.
-
-*This notebook will focus mostly on data visualization, aka Exploratory Data Analysis.*
 
 ---
 
@@ -121,12 +109,16 @@ In the data, reasons for delay is recorded in numeric format, i.e. if the featur
 
 
 
+
+
 ![](dataviz_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 The largest three reasons that delays are attributed to are the National Aviation System, late aircraft and carriers. This makes a lot of sense because delayed airlines most likely cause a domino effect, making subsequent flights even more delayed. Likewise, in the category of carrier, delays are very susceptible to human errors because workers are responsible of maintenance, baggage handling and fueling.
 
 Also, it was observed that most delayed flights were attributed to more than one reason.
 
 ---
+
+
 
 Let us investigate further by looking at the carriers and their average length of delay:
 
@@ -144,11 +136,15 @@ As speculated, market share does hold some degree of influence towards the avera
 
 Evaluating only the average length of delay would not be enough to conclude which carrier did worse in terms of delays. This time, We assess the proportion of flights delayed per carrier:
 
+
+
 ![](dataviz_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
 The United States Bureau of Transportation Statistics define "delayed flight" to be a carrier that is delayed for more than 15 minutes. It is clear that this chart's pattern closely mirrors the previous chart. Quite frankly, from this point on, We can be more certain about which are the worst carriers in terms of getting delayed. 
 
 ---
+
+
 
 What about the month people choose to fly? Does flying in say, Christmas period, have higher chances of getting delayed? 
 
@@ -164,16 +160,15 @@ Overall, time-related features show distinguishable patterns. November was the b
 
 ---
 
-```
-## geom_path: Each group consists of only one observation. Do you need to
-## adjust the group aesthetic?
-```
+
 
 ![](dataviz_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 Flight delay patterns also fluctuate on a weekly basis. Average length of delay and proportion of
 delayed flights are highest on Mondays and Fridays, while lowest on Saturdays. Although the difference was not that significant, the pattern does make some sense because most business travellers fly outbounds on Monday and return to office by the end of week.
 
 ---
+
+
 
 Let's do the same analysis for arrival and departure hours:
 
