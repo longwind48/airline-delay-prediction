@@ -19,7 +19,7 @@ output:
 
 This markdown document shows a summary of the 20-page report for the final year project of MA429 Algorithmic Techniques for Data Mining. 
 
-![](C:\Users\longwind48\Google Drive\Programming\Projects\us_airline_delay_prediction\scripts\dataviz_files\figure-html\carriers.png)
+![](scripts\dataviz_files\figure-html\carriers.png)
 
 Flight delays are a frequently occurring reality of commercial air travel. In 2017, 23% of all domestic flights in the United States, over a million flights, were delayed. Flights are considered on-time if they arrive less than 15 minutes after their scheduled arrival time, according to the United States Bureau of Transportation Statistics. 
 
