@@ -130,11 +130,11 @@ Let us investigate further by looking at the carriers and their average length o
 
 In terms of carrier, Virgin America (VX), JetBlue Airlines (B6) and ExpressJet Airlines Inc (EV) . have the longest average length of delay, as well as highest proportion of delayed flights. In contrast, United Air Lines Inc. (UA), Delta Air Lines Inc. (DL), Alaska Airlines Inc. (AS) and Hawaiian Airlines Inc. (HA) perform best with the shortest length of delay and smallest proportion of delayed flights. Well, it is hard to determine what is the actual cause in this case. We can only speculate at best. Take a look at the chart below. It depicts the domestic market share of leading U.S. airlines. 
 
-The bar chart below is taken from [The Statistics Portal: Domestic market share of leading U.S. airlines from April 2017 to March 2018](https://www.statista.com/statistics/250577/domestic-market-share-of-leading-us-airlines/)
+The bar chart below was taken from [The Statistics Portal: Domestic market share of leading U.S. airlines from April 2017 to March 2018](https://www.statista.com/statistics/250577/domestic-market-share-of-leading-us-airlines/)
 
 ![](dataviz_files/figure-html/USDomesticFlightsMarketShare.png)
 
-As speculated, market share does hold some degree of influence towards the average length of delay. Delta Airlines, United Airlines and American Airlines are major contenders in terms of market shares, and all of them have distinguishably lower average delay than other airlines. In addition, Alaska Airlines seems to be the anomaly here. They achieved a relatively low rate of delay compared to its neighbour in terms of market shares---Jetblue Airlines.
+As speculated, market share did hold some degree of influence towards the average length of delay. Delta Airlines, United Airlines and American Airlines are major contenders in terms of market shares, and all of them have distinguishably lower average delay than other airlines. In addition, Alaska Airlines seemed to be the anomaly here. They achieved a relatively low rate of delay compared to its neighbor in terms of market shares---Jetblue Airlines.
 
 ---
 
@@ -146,7 +146,7 @@ Evaluating only the average length of delay would not be enough to conclude whic
 
 ![](dataviz_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
-The United States Bureau of Transportation Statistics define "delayed flight" to be a carrier that is delayed for more than 15 minutes. It is clear that this chart's pattern closely mirrors the previous chart. Quite frankly, from this point on, We can be more certain about which are the worst carriers in terms of getting delayed. 
+The United States Bureau of Transportation Statistics define "delayed flight" to be a carrier that was delayed for more than 15 minutes. It is clear that this chart's pattern closely mirrored the previous chart. Quite frankly, from this point on, we could be more certain about which were the worst carriers in terms of getting delayed. 
 
 ---
 
@@ -156,7 +156,7 @@ What about the month people choose to fly? Does flying in say, Christmas period,
 
 ![](dataviz_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
 
-This simple line graph definitely shows some interesting inferences. Proportion of flights delayed peaked in the month of June, July and August, which happens to be the months of summer. Why is this the case? Well, it's really not hard to find out. Googling... 
+This simple line graph definitely displayed some interesting inferences. Proportion of flights delayed peaked in the month of June, July and August, which happened to be the months of summer. Why is this the case? Well, it's really not hard to find out. Googling... 
 
 *"Why does my flight always get delayed during summer?"*
 
@@ -169,8 +169,8 @@ Overall, time-related features show distinguishable patterns. November was the b
 
 
 ![](dataviz_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
-Flight delay patterns also fluctuate on a weekly basis. Average length of delay and proportion of
-delayed flights are highest on Mondays and Fridays, while lowest on Saturdays. Although the difference was not that significant, the pattern does make some sense because most business travellers fly outbounds on Monday and return to office by the end of week.
+Flight delay patterns also fluctuated on a weekly basis. Average length of delay and proportion of
+delayed flights were highest on Mondays and Fridays, while lowest on Saturdays. Although the difference was not that significant, the pattern did make some sense because most business travelers fly outbound on Monday and return to office by the end of week.
 
 ---
 
@@ -181,8 +181,7 @@ Let's do the same analysis for arrival and departure hours:
 ![](dataviz_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
 ![](dataviz_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
-Both plots have pretty clear trends. Within a day, average length of delay and proportion of delayed flights both fluctuate wildly in the early morning, and then climb up steadily to the delay peak around 20:00 and 21:00. The peaks in the morning can be misleading, considering that the effect of a single delayed flight will be quite visible on the delayed proportion, given the small number of domestic flights that take off in the early morning. The increasing trend of delay could be explained by the
-accumulated influence of delays earlier in the day.
+Both plots have pretty clear trends. Within a day, average length of delay and proportion of delayed flights both fluctuated wildly in the early morning, and then climbed up steadily to the delay peak around 20:00 and 21:00. The peaks in the morning could be misleading, considering that the effect of a single delayed flight would be quite visible on the delayed proportion, given the small number of domestic flights that took off in the early morning. The increasing trend of delay could be explained by the accumulated influence of delays earlier in the day.
 
 ---
 
@@ -190,7 +189,7 @@ accumulated influence of delays earlier in the day.
 
 ## Feature Engineering ideas
 
-The above visualizations are only a subset of the plots produced for this project. Since this is still a modelling project, the goal of producing the above plots is to make informed decisions on feature selection. 
+The above visualizations are only a subset of the plots produced for this project. Since this is ultimately a modelling project, the goal of producing the above plots is to make informed decisions on feature selection. 
 
 The *Proportion of Flights Delayed across Arrival Hours* plot shows the relationship between average arrival delay and scheduled flight arrival time (CRS_ARR_TIME). From the plot, there appears to be a linear relationship between arrival delay and scheduled flight arrival time – the later in the day the more severe delay flights tend to be. Therefore, scheduled flight arrival time, originally in the format of “hhmm” for a 24-hour clock, if converted to a numerical variable, would be better suited to capture this relationship. A function was created to convert this feature to minutes after midnight. For example, 1:30 a.m. which was recorded as 130 in the original data, and was converted to 90 minutes after midnight by the function. 
 
